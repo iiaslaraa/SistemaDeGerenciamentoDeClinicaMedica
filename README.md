@@ -128,25 +128,25 @@ A estrutura do projeto será expandida conforme novas funcionalidades forem send
 O projeto está sendo desenvolvido seguindo uma arquitetura em camadas, buscando manter a organização e facilitar futuras manutenções.
 
 ```text
-┌──────────────┐
-│   Usuário    │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│ Aplicação    │
-│     Java     │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│     JDBC     │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│    MySQL     │
-└──────────────┘
+                                                   ┌──────────────┐
+                                                   │   Usuário    │
+                                                   └──────┬───────┘
+                                                          │
+                                                          ▼
+                                                   ┌──────────────┐
+                                                   │ Aplicação    │
+                                                   │     Java     │
+                                                   └──────┬───────┘
+                                                          │
+                                                          ▼
+                                                   ┌──────────────┐
+                                                   │     JDBC     │
+                                                   └──────┬───────┘
+                                                          │
+                                                          ▼
+                                                   ┌──────────────┐
+                                                   │    MySQL     │
+                                                   └──────────────┘
 ```
 
 Conforme o desenvolvimento avançar, novas camadas serão adicionadas, incluindo entidades, DAOs e demais componentes da aplicação.
