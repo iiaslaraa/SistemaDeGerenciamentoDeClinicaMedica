@@ -1,0 +1,27 @@
+# Java
+
+*.class
+
+# Logs
+
+*.log
+
+# IDEs
+
+.idea/
+.vscode/
+
+# NetBeans
+
+nbproject/private/
+
+# Build
+
+build/
+dist/
+
+
+# Sistema Operacional
+
+.DS_Store
+Thumbs.db
