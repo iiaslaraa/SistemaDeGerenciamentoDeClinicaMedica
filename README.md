@@ -121,14 +121,14 @@ O projeto está sendo desenvolvido de forma incremental, acompanhando as etapas 
 
 Todas as entidades possuem:
 
--✔ grava()
--✔ leUm()
--✔ leTodos()
--✔ leTodosLike()
--✔ leTodosNotIn()
--✔ leTodosBetween()
--✔ altera()
--✔ exclui()
+✔ grava()
+✔ leUm()
+✔ leTodos()
+✔ leTodosLike()
+✔ leTodosNotIn()
+✔ leTodosBetween()
+✔ altera()
+✔ exclui()
 
 ---
 
