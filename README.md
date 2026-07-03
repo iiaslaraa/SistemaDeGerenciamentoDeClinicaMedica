@@ -6,19 +6,21 @@
 
 Projeto acadêmico desenvolvido durante o **Curso Técnico em Informática** da **Escola Técnica de Brasília (ETB)**.
 
-Aplicando conceitos de **Engenharia de Software**, **Banco de Dados Relacionais**, **Programação Orientada a Objetos** e **Desenvolvimento Backend**.
+Aplicando conceitos de:
+✔ Engenharia de Software  
+✔ Programação Orientada a Objetos (POO)  
+✔ Persistência de Dados (DAO)  
+✔ Banco de Dados Relacional (MySQL)  
+✔ UML (Diagrama de Classes)  
+✔ JDBC  
 
 <br>
 
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge)
-
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 ![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![NetBeans](https://img.shields.io/badge/NetBeans-8.2-1B6AC6?style=for-the-badge)
+![Git](https://img.shields.io/badge/Git-Versionamento-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 </div>
 
@@ -30,6 +32,8 @@ Aplicando conceitos de **Engenharia de Software**, **Banco de Dados Relacionais*
 - 🎯 Objetivos
 - 🚧 Status
 - 🛠 Tecnologias
+- ⚙️ Funcionalidades
+- 🧪 Testes
 - 📂 Estrutura
 - 🏗 Arquitetura
 - 🗄 Banco de Dados
@@ -47,6 +51,20 @@ O **Sistema de Gerenciamento para Clínica Médica** é um projeto acadêmico de
 O projeto tem como objetivo desenvolver uma aplicação para gerenciamento de clínicas médicas, colocando em prática conhecimentos de Engenharia de Software, Banco de Dados Relacionais, Programação Orientada a Objetos e Java.
 
 Atualmente o projeto encontra-se em desenvolvimento. Nesta fase inicial foram realizados o levantamento de requisitos, a modelagem do banco de dados e a estruturação da documentação técnica, que servirão como base para a implementação da aplicação.
+
+O sistema permite o gerenciamento de:
+
+- Médicos
+- Pacientes
+- Consultórios
+- Consultas
+- Exames
+
+Além das tabelas associativas:
+
+- Médico_Paciente
+- Médico_Exame
+- Paciente_Exame
 
 ---
 
@@ -74,12 +92,12 @@ O projeto está sendo desenvolvido de forma incremental, acompanhando as etapas 
 | Levantamento de Requisitos | ✅ Concluído |
 | Modelagem do Banco de Dados | ✅ Concluído |
 | Scripts SQL | ✅ Concluído |
-| Modelagem UML | 🚧 Em desenvolvimento |
-| Desenvolvimento em Java | 🚧 Em desenvolvimento |
-| Integração JDBC | ⏳ Planejado |
-| Camada DAO | ⏳ Planejado |
-| Operações CRUD | ⏳ Planejado |
-| Testes | ⏳ Planejado |
+| Modelagem UML | ✅ Concluído |
+| Desenvolvimento em Java | ✅ Concluído |
+| Integração JDBC | ✅ Concluído |
+| Camada DAO | ✅ Concluído |
+| Operações CRUD | ✅ Concluído |
+| Testes | ✅ Concluído |
 | Documentação Final | ⏳ Planejado |
 
 ---
@@ -88,14 +106,43 @@ O projeto está sendo desenvolvido de forma incremental, acompanhando as etapas 
 
 | Categoria | Tecnologia | Status |
 |:-----------|:-----------|:------:|
-| Linguagem | Java | 🚧 |
+| Linguagem | Java | ✅ |
 | Banco de Dados | MySQL | ✅ |
 | Linguagem SQL | SQL | ✅ |
 | Modelagem | MySQL Workbench | ✅ |
-| UML | Astah Professional | 🚧 |
+| UML | Astah Professional | ✅ |
 | Versionamento | Git | ✅ |
 | Repositório | GitHub | ✅ |
-| IDE | NetBeans | 🚧 |
+| IDE | NetBeans | ✅ |
+
+---
+
+## ⚙️ Funcionalidades Implementadas
+
+Todas as entidades possuem:
+
+✔ grava()
+✔ leUm()
+✔ leTodos()
+✔ leTodosLike()
+✔ leTodosNotIn()
+✔ leTodosBetween()
+✔ altera()
+✔ exclui()
+
+---
+
+## 🧪 Testes
+
+Foram desenvolvidas classes de teste para todas as entidades do sistema, validando:
+
+Inserção
+Consulta
+Atualização
+Exclusão
+Pesquisas com LIKE
+Pesquisas com NOT IN
+Pesquisas com BETWEEN
 
 ---
 
@@ -104,19 +151,19 @@ O projeto está sendo desenvolvido de forma incremental, acompanhando as etapas 
 ```text
 Java-database-management-system
 │
-├── database/
-│   ├── ClinicaMedica_Script.sql
-│   └── ClinicaMedica_backupcompleto.sql
+├── Projeto_ClinicaMedica
 │
-├── docs/
+├── database
+│   ├── projetoclinicamedica.sql
+│   └── MODELO RELACIONAL (MySQL).pdf
 │
-├── src/
+├── docs
+│   └── Diagrama De Classes - UML.pdf
 │
 ├── README.md
-│
-├── LICENSE
-│
-└── .gitignore
+├── ROADMAP.md
+├── CHANGELOG.md
+└── LICENSE
 ```
 
 A estrutura do projeto será expandida conforme novas funcionalidades forem sendo implementadas.
@@ -167,6 +214,20 @@ Nesta fase foram desenvolvidos:
 - Chaves estrangeiras;
 - Scripts SQL de criação da base.
 
+Entidades principais:
+
+Médico
+Paciente
+Consultório
+Consulta
+Exame
+
+Entidades associativas:
+
+Médico_Paciente
+Médico_Exame
+Paciente_Exame
+
 O banco de dados servirá como base para as próximas etapas de desenvolvimento da aplicação.
 
 ---
@@ -191,18 +252,18 @@ Os diagramas serão adicionados ao repositório conforme forem finalizados.
 | v0.1.0 | Planejamento do Projeto | ✅ |
 | v0.2.0 | Modelagem do Banco de Dados | ✅ |
 | v0.3.0 | Scripts SQL | ✅ |
-| v0.4.0 | Modelagem UML | 🚧 |
-| v0.5.0 | Estrutura Inicial em Java | 🚧 |
-| v0.6.0 | Integração JDBC | ⏳ |
-| v0.7.0 | Implementação da Camada DAO | ⏳ |
-| v0.8.0 | Operações CRUD | ⏳ |
-| v0.9.0 | Testes da Aplicação | ⏳ |
-| v1.0.0 | Primeira Versão Estável | ⏳ |
+| v0.4.0 | Modelagem UML | ✅ |
+| v0.5.0 | Estrutura Inicial em Java | ✅ |
+| v0.6.0 | Integração JDBC | ✅ |
+| v0.7.0 | Implementação da Camada DAO | ✅ |
+| v0.8.0 | Operações CRUD | ✅ |
+| v0.9.0 | Testes da Aplicação | ✅ |
+| v1.0.0 | Primeira Versão Estável | ✅ |
 
 
 ---
 
-##📌 Próximas Implementações
+## 📌 Próximas Implementações
 
 As próximas etapas previstas para o desenvolvimento do projeto incluem:
 
@@ -221,9 +282,9 @@ As próximas etapas previstas para o desenvolvimento do projeto incluem:
 | Documento | Status |
 |:-----------|:------:|
 | README | ✅ |
-| Banco de Dados | 🚧 |
-| UML | 🚧 |
-| Arquitetura | ⏳ |
+| Banco de Dados | ✅ |
+| UML | ✅ |
+| Arquitetura | ✅ |
 | CHANGELOG | ⏳ |
 | ROADMAP | ⏳ |
 
