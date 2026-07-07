@@ -331,11 +331,3 @@ Software Engineering Student • Data Analytics Student • IT Technician
 - **E-mail:** iasmimlaracardoso@gmail.com
 
 ---
-
-<div align="center">
-
-### ⭐ Se este projeto foi interessante para você, considere deixar uma estrela no repositório.
-
-Ela ajuda a apoiar o desenvolvimento e incentiva a continuidade do projeto.
-
-</div>
